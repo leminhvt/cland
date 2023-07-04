@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+ "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<!--PUBLIC -->
+	<definition name="cland.public.template"
+		template="/WEB-INF/templates/public/template.jsp">
+		<put-attribute name="header"
+			value="/WEB-INF/templates/public/header.jsp" />
+		<put-attribute name="title"
+			value="Dự án cland" />
+		<put-attribute name="leftbar"
+			value="/WEB-INF/templates/public/leftbar.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/templates/public/footer.jsp" />
+	</definition>
+	<definition name="cland.public.index"
+		extends="cland.public.template">
+		<put-attribute name="body"
+			value="/WEB-INF/views/public/index.jsp" />
+	</definition>
+	<definition name="cland.public.cat"
+		extends="cland.public.template">
+		<put-attribute name="body"
+			value="/WEB-INF/views/public/cat.jsp" />
+	</definition>
+	<definition name="cland.public.single"
+		extends="cland.public.template">
+		<put-attribute name="body"
+			value="/WEB-INF/views/public/single.jsp" />
+	</definition>
+	<definition name="cland.public.contact"
+		extends="cland.public.template">
+		<put-attribute name="body"
+			value="/WEB-INF/views/public/contact.jsp" />
+	</definition>
+
+	<!--ADMIN -->
+	<definition name="cland.admin.template"
+		template="/WEB-INF/templates/admin/template.jsp">
+		<put-attribute name="header"
+			value="/WEB-INF/templates/admin/header.jsp" />
+		<put-attribute name="leftbar"
+			value="/WEB-INF/templates/admin/leftbar.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/templates/admin/footer.jsp" />
+	</definition>
+	<definition name="cland.admin.index.index"
+		extends="cland.admin.template">
+		<put-attribute name="title"
+			value="Dự án cland" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/index/index.jsp" />
+	</definition>
+	<definition name="cland.admin.cat.index"
+		extends="cland.admin.template">
+		<put-attribute name="title"
+			value="Danh sách danh mục" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/cat/index.jsp" />
+	</definition>
+	<definition name="cland.admin.cat.add"
+		extends="cland.admin.template">
+		<put-attribute name="title"
+			value="Thêm danh mục" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/cat/add.jsp" />
+	</definition>
+	<definition name="cland.admin.cat.edit"
+		extends="cland.admin.template">
+		<put-attribute name="title"
+			value="Sửa danh mục " />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/cat/edit.jsp" />
+	</definition>
+	<definition name="cland.admin.user.index"
+		extends="cland.admin.template">
+		<put-attribute name="title"
+			value="Quản lý người dùng " />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/user/index.jsp" />
+	</definition>
+	<definition name="cland.admin.user.add"
+		extends="cland.admin.template">
+		<put-attribute name="title"
+			value="Thêm người dùng" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/user/add.jsp" />
+	</definition>
+	<definition name="cland.admin.user.edit"
+		extends="cland.admin.template">
+		<put-attribute name="title"
+			value="Sửa người dùng" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/user/edit.jsp" />
+	</definition>
+
+	<definition name="cland.admin.new.index"
+		extends="cland.admin.template">
+		<put-attribute name="title"
+			value="Danh sách tin tức" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/new/index.jsp" />
+	</definition>
+	<definition name="cland.admin.new.add"
+		extends="cland.admin.template">
+		<put-attribute name="title"
+			value="Thêm tin tức" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/new/add.jsp" />
+	</definition>
+	<definition name="cland.admin.new.edit"
+		extends="cland.admin.template">
+		<put-attribute name="title"
+			value="Sửa tin tức" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/new/edit.jsp" />
+	</definition>
+
+	<definition name="cland.admin.contact.index"
+		extends="cland.admin.template">
+		<put-attribute name="title"
+			value="Danh sách liên hệ" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/contact/index.jsp" />
+	</definition>
+	<definition name="cland.admin.contact.edit"
+		extends="cland.admin.template">
+		<put-attribute name="title"
+			value="Sửa liên hệ" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/contact/edit.jsp" />
+	</definition>
+	
+	<definition name="cland.admin.user.profile"
+		extends="cland.admin.template">
+		<put-attribute name="title"
+			value="Profile" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/user/profile.jsp" />
+	</definition>
+	
+	<definition name="cland.admin.new.search"
+		extends="cland.admin.template">
+		<put-attribute name="title"
+			value="Tìm kiếm" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/new/search.jsp" />
+	</definition>
+
+
+</tiles-definitions>
